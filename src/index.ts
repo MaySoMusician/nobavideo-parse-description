@@ -1,7 +1,4 @@
-export default function (
-  videoId: string,
-  description: string
-): string | boolean {
+export default function (videoId: string, description: string): string | false {
   // DELTARUNE 関係
   if (['_QqKrxrH918', '9FciKdNwyDQ'].includes(videoId)) return false;
 
