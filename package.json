@@ -1,12 +1,12 @@
 {
   "name": "nobavideo-parse-description",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
     "test": "jest --config jestconfig.json",
     "build": "tsc",
-    "prepare": "yarn build"
+    "install": "yarn build"
   },
   "repository": "git@github.com:MaySoMusician/nobavideo-parse-description.git",
   "author": "MaySoMusician <maysomusician@gmail.com>",
