@@ -5,8 +5,6 @@ export default function (videoId: string, description: string): string | false {
   const replaced = description
     .replace(/(?:🍀|♪)?.+(?:：|:)\s*https?:\/\/.+/g, '')
     .replace(/ ----------------------------------/g, '')
-    .replace(/\r/g, '')
-    .replace(/\n{2,}/g, '\n')
     .split('曲：')[0]
     .split('Musics:')[0]
     .split('今日のゲーム：')[0]
@@ -22,6 +20,9 @@ export default function (videoId: string, description: string): string | false {
     .split('提供：')[0]
     .split('リファレンス\n')[0]
     .split('使用機材：ガレリア')[0]
+    .replace(/----------------------------------/g, '')
+    .replace(/\r/g, '')
+    .replace(/\n{2,}/g, '\n')
     .replace(/^\n/, '')
     .replace(/\n$/, '');
 
