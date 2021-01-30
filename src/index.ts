@@ -17,6 +17,7 @@ export default function (videoId: string, description: string): string | false {
     .split('もくじ')[0]
     .split('【目次】')[0]
     .split('Supported by Google Play\n')[0]
+    .split('Sponsored by ガレリア\n')[0]
     .split('提供：')[0]
     .split('リファレンス\n')[0]
     .split('使用機材：ガレリア')[0]

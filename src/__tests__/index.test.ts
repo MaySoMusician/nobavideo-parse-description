@@ -123,3 +123,45 @@ https://muuu.com/videos/9258f6c0281204e4
 #のばまん #シミュレーションゲーム #ゲーム`;
   expect(parse('2Qa8ooCiHFg', original)).toBe('改造は危険危険');
 });
+
+test('20201129', () => {
+  const original = `Sponsored by ガレリア
+
+----------------------------------
+使用機材：ガレリア（​ゲーミングPC​）
+ガレリアについては下記からチェック​！
+https://onl.tw/5wDZzf9
+ ----------------------------------
+🍀チャンネル登録：
+http://bit.ly/nobamantouroku
+
+🍀メンバーシップ：
+https://www.youtube.com/channel/UCTW2...
+
+🍀ツイッター:
+ https://twitter.com/nobamangames
+
+🍀のばまんインスタ：
+https://www.instagram.com/nobamangames/
+
+🍀のばまんグッズ：
+https://muuu.com/videos/9258f6c0281204e4
+
+🍀のばまんスタンプ：
+１．https://store.line.me/stickershop/pro...
+２．https://store.line.me/stickershop/pro...
+
+ ----------------------------------
+
+
+🍀他ののばまんの動画：https://www.youtube.com/playlist?list...
+
+🍀のばまん実況：https://www.youtube.com/playlist?list...
+
+
+ ----------------------------------
+
+
+#のばまん #シミュレーションゲーム #ゲーム`;
+  expect(parse('In2-KFKwLK8', original)).toBe('（なし）');
+});
